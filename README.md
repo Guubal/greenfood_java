@@ -3,7 +3,7 @@
 ## 🚧 Em construção. 🚧   
 
 ## Pessoas Colaboradoras 👥
-Projeto inicialmente idealizado e desenvolvido em grupo no curso da Trybe por:
+Projeto idealizado e desenvolvido em grupo no curso da Generation por:
 - [Gustavo Balieiro](https://github.com/Guubal)
 - [Mauricio Lopes](https://github.com/mlopeesz)
 - [Ralf Silva](https://github.com/ralfvsilva)
