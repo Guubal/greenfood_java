@@ -1,5 +1,6 @@
 package com.greendevs.greenfood.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -23,6 +24,18 @@ public class Produto {
 
     @NotBlank(message = "Necessário ter a foto do produto.")
     private String foto;
+
+    @ManyToOne
+    @JsonIgnoreProperties("produto")
+    private Categoria categoria;
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 
     public Long getId() {
         return id;
@@ -63,4 +76,8 @@ public class Produto {
     public void setFoto(String foto) {
         this.foto = foto;
     }
+
+
+
+
 }
