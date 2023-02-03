@@ -3,6 +3,7 @@ package com.greendevs.greenfood.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -16,7 +17,7 @@ public class Produto {
     @NotBlank(message = "O parâmetro nome é necessário.")
     private String nome;
 
-    @NotBlank
+    @NotNull
     private float preco;
 
     @Size(min = 10 , max = 1000, message = "Descrição deve ter entre 10 a 1000 caracteres.")
