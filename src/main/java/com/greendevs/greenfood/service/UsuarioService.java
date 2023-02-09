@@ -32,7 +32,7 @@ public class UsuarioService {
 
     public Optional<Usuario> atualizarUsuario(Usuario usuario) {
 
-        if(usuarioRepository.findById(usuario.getId()).isEmpty()){
+        if(usuarioRepository.findById(usuario.getId()).isPresent()){
 
             Optional<Usuario> buscarUsuario = usuarioRepository.findByUsuario(usuario.getUsuario());
 
